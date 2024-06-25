@@ -1,1 +1,36 @@
+/* Apply flexbox to body and main containers */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Optional: ensures the body takes up the full viewport height */
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Style header and footer for visual distinction */
+header, footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Define the flex properties for article and aside */
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #e1e1e1;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #d1d1d1;
+}
 
