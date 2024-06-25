@@ -1,4 +1,4 @@
-/* Apply flexbox to body and main containers */
+/* General Styles */
 body {
     display: flex;
     flex-direction: column;
@@ -12,14 +12,12 @@ main {
     flex: auto;
 }
 
-/* Style header and footer for visual distinction */
 header, footer {
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
 }
 
-/* Define the flex properties for article and aside */
 article {
     flex: 2;
     overflow-y: auto;
@@ -34,3 +32,13 @@ aside {
     background-color: #d1d1d1;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    article, aside {
+        flex: 1;
+    }
+}
