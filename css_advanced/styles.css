@@ -1,0 +1,412 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-ExtraLight.otf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-It.otf");
+    font-weight: italic;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    top: 35px;
+    left: 0px;
+    background-color: transparent;
+    width: 100%;
+    height: 29.46px;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 171.59px;
+}
+
+header ul {
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+    color: white;
+}
+
+header img {
+    object-fit: contain;
+}
+
+header li {
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+header li a{
+    font-family: "Source Sans Pro";
+    text-decoration: none;
+    color: white;
+}
+
+.get_schooled_section {
+    background-image: url("./Images/Object.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 65px;
+}
+
+.schooled {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.schooled h1 {
+    font-family: "Source Sans Pro";
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150.84px;
+    text-align: center;
+    color: white;
+    padding-top: 160px;
+    margin: 0;
+}
+
+.schooled span {
+    font-family: "Source Sans Pro";
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.schooled button {
+    margin-top: 20px;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    text-align: center;
+    width: 162px;
+    height: 44px;
+    color: white;
+    background: #C271FF;
+    border-radius: 208px;
+    border: none;
+    font-weight: normal;
+}
+
+.schooled button:hover {
+    background-color: #8a50b3;
+}
+
+.learn h2 {
+    font-family: "Source Sans Pro";
+    font-size: 32px;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.learn h2 span:first-child {
+    font-family: "Source Sans Pro";
+    font-size: 32px;
+    font-weight: bold; 
+    color: #C271FF;
+}
+
+.learn h2 span:last-child {
+    font-family: "Source Sans Pro";
+    color: white;
+    font-weight: lighter;
+    font-size: 32px;
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.19fr));
+    justify-content: center;
+}
+
+.images h3, p {
+    color: white;
+    text-align: center;
+}
+
+.images div {
+    text-align: center;
+}
+
+.second_section {
+    background: #C271FF;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_section img {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+
+.second_section blockquote {
+    width: 730px;
+    height: 68px;
+    font-family: "Source Sans Pro";
+    color: white;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.second_section h3 {
+    font-family: "Source Sans Pro";
+    width: 129px;
+    height: 34px;
+    top: 90px;
+    color: white;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.second_section p {
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    margin: 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content h2 {
+    font-family: "Source Sans Pro";
+    font-size: 32px;
+    color: #071629;
+    font-weight: normal;
+}
+
+.content h2 span {
+    font-family: "Source Sans Pro";
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    text-align: left;
+    padding: 35px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-family: "Source Sans Pro";
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.card p {
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #C271FF;
+    font-family: "Source Sans Pro";
+    margin-bottom: 0;
+}
+
+.card-footer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.rating {
+    display: flex;
+    color: #C271FF;
+    padding-left: 10px;
+}
+
+.rating-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-time p {
+    color: #C271FF;
+}
+
+/* >>>>> Membership <<<<<< */
+
+.membership {
+    background: #071629;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 502px;
+    text-align: center;
+}
+
+.membership h2 {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 58px;
+    line-height: 40.22px;
+}
+
+.membership h2 span {
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 32px;
+    color: #C271FF;
+}
+
+.membership-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.membership-card {
+    width: 257px;
+}
+
+.membership h3 {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+
+.membership button {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    background-color: #a064cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 85px;
+}
+
+.membership button:hover {
+    background-color: #8a50b3;
+}
+
+/* >>>>> FAQ <<<<<< */
+
+.faq-section {
+
+    text-align: center;
+    padding: 67px 130px;
+}
+
+.faq-section h2 {
+    font-family: "Source Sans Pro";
+    font-weight: lighter;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #071629;
+    text-align: center;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.faq-item {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 16px;
+    padding: 20px;
+    width: 45%;
+    min-width: 280px;
+    text-align: left;
+}
+
+/* >>> Footer <<< */
+
+.footer-section {
+    background: #071629;
+    padding: 20px;
+    text-align: center;
+    font-family: "Source Sans Pro";
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 120px;
+}
+
+
+.social-icons i {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons i:hover {
+    color: #BBBBBB;
+}
+
+.footer p {
+    color: #666;
+    font-family: "Source Sans Pro";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 15.08px;
+}

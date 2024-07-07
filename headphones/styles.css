@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-ExtraLight.otf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./fonts/SourceSansPro-It.otf");
+    font-weight: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro";
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+header .logo img {
+    height: 32px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+    font-size: 12px;
+    column-gap: normal;
+}
+
+nav a:hover,
+nav a:active {
+    color: #FF6565;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+    padding: 100px 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6565;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.cta-button:hover,
+.cta-button:active {
+    opacity: 0.9;
+}
+
+.content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Dropdown menu */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    font-size: 1.5em;
+}
+
+.menu-icon .menu-icon-close {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-toggle:checked + .menu-icon .menu-icon-open {
+    display: none;
+}
+
+.menu-toggle:checked + .menu-icon .menu-icon-close {
+    display: inline;
+}
+
+.menu-toggle:checked ~ .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        order: -1; /* Move logo to the top */
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .dropdown-content {
+        position: static;
+        transform: none;
+        background: none; /* Make dropdown content transparent */
+        padding: 0;
+    }
+
+    .dropdown-content a {
+        padding: 8px 0; /* Adjust padding */
+    }
+}
